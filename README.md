@@ -111,14 +111,5 @@ The OLED displays the information in the following format:
                      ▼                              ▼
                 Date & Time                    Visual Output
 
-## 🔌 Hardware Components
 
-| Component | Quantity | Purpose |
-|---|:---:|---|
-| ESP32 DevKit V1 | 1 | Main microcontroller |
-| DS3231 RTC Module | 1 | Real-time date and time |
-| SSD1306 OLED 128×64 | 1 | Date and time display |
-| RTC Backup Battery | 1 | Maintains RTC time when main power is removed |
-| Breadboard | 1 | Hardware prototyping |
-| Jumper Wires | As required | Circuit connections |
 | USB Cable | 1 | Programming and power |
