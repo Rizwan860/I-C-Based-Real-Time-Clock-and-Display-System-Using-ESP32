@@ -81,6 +81,7 @@ The OLED displays the information in the following format:
 │      02 SEP 2026       │
 └────────────────────────┘
 
+Display Information
 
 | Parameter | Description                 |
 | --------- | --------------------------- |
