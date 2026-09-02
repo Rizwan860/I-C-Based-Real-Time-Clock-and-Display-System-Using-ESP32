@@ -81,7 +81,7 @@ The OLED displays the information in the following format:
 │      02 SEP 2026       │
 └────────────────────────┘
 
-Display Information
+ # Display Information
 
 | Parameter | Description                 |
 | --------- | --------------------------- |
@@ -89,3 +89,24 @@ Display Information
 | Time      | Current time                |
 | AM/PM     | 12-hour time indication     |
 | Date      | Current day, month and year |
+
+🧠 System Architecture
+                         ┌─────────────────────┐
+                         │        ESP32        │
+                         │   Main Controller   │
+                         └──────────┬──────────┘
+                                    │
+                              I²C BUS
+                         SDA → GPIO 21
+                         SCL → GPIO 22
+                                    │
+                    ┌───────────────┴───────────────┐
+                    │                               │
+                    ▼                               ▼
+             ┌───────────────┐              ┌────────────────┐
+             │    DS3231      │              │    SSD1306     │
+             │      RTC       │              │   OLED 128×64  │
+             └───────┬───────┘              └───────┬────────┘
+                     │                              │
+                     ▼                              ▼
+                Date & Time                    Visual Output
