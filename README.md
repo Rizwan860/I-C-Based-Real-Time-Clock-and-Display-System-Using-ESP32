@@ -795,10 +795,6 @@ GitHub:
 
 https://github.com/Rizwan860
 
-LinkedIn:
-
-https://linkedin.com/in/riyaz-shaik-67a5aa26
-
 ---
 
 ## License
